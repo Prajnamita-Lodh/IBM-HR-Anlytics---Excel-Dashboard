@@ -40,3 +40,4 @@ The "db" sheet serves as the primary database from which all other sheets are de
 - HR dashboard – The main dashboard for IBM HR Analytics.
 
 ## Steps followed 
+- Step 1:
