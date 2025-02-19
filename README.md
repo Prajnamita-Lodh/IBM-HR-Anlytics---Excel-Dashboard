@@ -41,3 +41,4 @@ The "db" sheet serves as the primary database from which all other sheets are de
 
 ## Steps followed 
 - Step 1:
+![Image](https://github.com/user-attachments/assets/07b440aa-7984-41f6-b342-d3350322d89d)
