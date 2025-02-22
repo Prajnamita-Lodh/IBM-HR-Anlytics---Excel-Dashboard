@@ -1,5 +1,6 @@
-# IBM HR Anlytics - Excel-Dashboard
+# IBM HR Analytics
 
+![Image](https://github.com/user-attachments/assets/07b440aa-7984-41f6-b342-d3350322d89d)
 
 ## Problem Statement
 
@@ -76,10 +77,50 @@ Empowers decision-makers with valuable insights into employee retention, perform
 ![Image](https://github.com/user-attachments/assets/8b9b4c9a-0377-4a1f-9695-e387ec7ff0eb)
 - Step 4 : Job Satifaction is diplayed through the Pie chart through the pivot table and chart. To create the pivot pie chart and table, "JobSatisfaction" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_.
 ![Image](https://github.com/user-attachments/assets/1ffa968f-b339-4c2a-b6bf-d25e00ca0a16)
+- Step 5 : New pivot table is created to represent **"Income by dep"**. In time of creating the pivot chart and table, "Gender" is palced in _Columns_, "Department" is plotted as _Rows_ and "Average of MonthlyIncome" is placed as _Value_.
+![Image](https://github.com/user-attachments/assets/cf97df4b-e090-4f5e-bc95-88c66da75c6f)
+- Step 6 :By selecting the total data range, **"Work life by status"** sheet is created where "MaritalStatus" is palced in _Columns_, "WorkLifeBalance" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_. Here is the selected chart is "Radar".
+![Image](https://github.com/user-attachments/assets/d39b5273-413d-4504-9556-c4f7a96ae9ce)
+- Step 7 : **"Training"** is diplayed through the Line chart through the pivot table and chart. To create the pivot chart and table, "Department" is palced in _Columns_, "TrainingTimesLastYear" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_.
+![Image](https://github.com/user-attachments/assets/3902b981-a425-4569-b672-30a2cf771c04)
+- Step 8 : The new sheet is created to identify the "Divorced" employee in **"Divorced"**. This data is prepared by filtering from the original dataset. 
+- Step 9 : All key **"Insights"** is created to calculate "Total Employee Count", "Average of JobSatisfaction", "Average of Age", and "Marital Status".
 
+![Image](https://github.com/user-attachments/assets/5738100d-1bfb-4902-8a88-448364790099)
 
-
-
-
-
+- Step 10 : To create the interactive HR Dashboard, slicer for department, gender, over time, job satisfection, job involvement, and attrition is placed in the left side. Displayed total employee number, average age, turnover rate and job satisfection at the top. Other created charts are also placed in the dashboard to display all insights at one place.
 ![Image](https://github.com/user-attachments/assets/07b440aa-7984-41f6-b342-d3350322d89d)
+
+# Used Formula in IBM HR Dashboard:
+- Total Employee Number:
+
+        Total Employee Number = GETPIVOTDATA("EmployeeNumber",Insight!$A$2)
+- Total Male Employee Number:
+
+        Total Male Employee Number = GETPIVOTDATA("EmployeeNumber",Insight!$A$2,"Gender","Male")
+- Total Female Employee Number:
+
+        Total Female Employee Number = GETPIVOTDATA("EmployeeNumber",Insight!$A$2,"Gender","Female")
+- Average Turnover Rate:
+
+      Average Turnover Rate = Insight!H16
+
+- Average Turnover Rate for Male:
+
+        Average Turnover Rate for Male = Insight!H18 
+- Average Turnover Rate for Female:
+
+        Average Turnover Rate for Female = Insight!H16
+- Average Age of the Employee:
+
+        Average Age of the Employee = GETPIVOTDATA("Age",Insight!$A$14)
+ - Average Age of Male:
+
+        Average Age of Male = GETPIVOTDATA("Age",Insight!$A$14,"Gender","Male")
+- Average Age of Female:
+
+        Average Age of Female = GETPIVOTDATA("Age",Insight!$A$14,"Gender","Female")
+
+ # Usage of the HR Dashboard:
+
+The HR Analytics Dashboard is designed to help HR professionals, managers, and decision-makers gain valuable insights into workforce trends, employee satisfaction, and organizational performance. By leveraging interactive filters, users can analyze key metrics such as gender distribution, job satisfaction, attrition rates, and business travel patterns across different job roles. The dashboard enables easy comparison of departmental performance, monthly income trends, and training investments, allowing HR teams to make data-driven decisions. With real-time updates and a user-friendly interface, this dashboard streamlines HR analytics and enhances workforce planning.
