@@ -39,6 +39,47 @@ The "db" sheet serves as the primary database from which all other sheets are de
 - Divorced – Detailed information about divorced employee.
 - HR dashboard – The main dashboard for IBM HR Analytics.
 
+## Key Features of Dashboard:
+🔄 **Data Consolidation**:
+The dashboard integrates multiple HR metrics into a unified view, providing a comprehensive analysis of employee demographics, satisfaction, and performance.
+
+🎛 **Interactive Slicers**:
+Users can filter data dynamically based on Gender, Department, Overtime, Job Satisfaction, Job Involvement, and Attrition, enabling deeper insights into specific employee groups.
+
+📈 **Visual Representation**:
+A combination of bar charts, pie charts, radar charts, and line graphs visually represents key HR metrics, making it easier to identify trends and patterns.
+
+🏆 **Employee Satisfaction & Turnover Insights**:
+Analyze Job Satisfaction, Involvement, and Attrition Rates to assess workforce engagement and predict potential turnover risks.
+
+🌍 **Business Travel & Work-Life Balance Analysis**:
+Provides a breakdown of travel frequency across job roles and examines work-life balance based on marital status.
+
+💰 **Compensation & Departmental Comparisons**:
+Visualizes monthly income across departments, helping HR teams identify salary trends and disparities.
+
+⚡ **User-Friendly & Customizable**:
+Designed with an intuitive interface, ensuring easy navigation. Users can customize reports and charts based on specific business needs.
+
+🔄 **Real-Time Updates**:
+The dashboard stays connected to the data source, updating automatically whenever new HR data is added or modified.
+
+📊 **Strategic HR Insights**:
+Empowers decision-makers with valuable insights into employee retention, performance trends, and workforce distribution, aiding in better HR planning.
+
 ## Steps followed 
-- Step 1:
+
+- Step 1 : Get the dataset for IBM Employee from "Kaggle".
+- Step 2 : Select the whole data range and go to "Insert". After the clicked on ""PivotChart and PivotTable". The pivot was created in the new sheet which is named as **"Gender by dep"**. To create the pivot chart and table, "Gender" is palced in _Columns_, "Department" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_.
+![Image](https://github.com/user-attachments/assets/081d5c50-e6e6-483d-9700-630cfac6df16)
+- Step 3 : Another new sheet was created by the name **"Travel by role"**. To create the pivot chart and table, "BusinessTravel" is palced in _Columns_, "JobRole" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_.
+![Image](https://github.com/user-attachments/assets/8b9b4c9a-0377-4a1f-9695-e387ec7ff0eb)
+- Step 4 : Job Satifaction is diplayed through the Pie chart through the pivot table and chart. To create the pivot pie chart and table, "JobSatisfaction" is plotted as _Rows_ and "Count of EmployeeNumber" is placed as _Value_.
+![Image](https://github.com/user-attachments/assets/1ffa968f-b339-4c2a-b6bf-d25e00ca0a16)
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/07b440aa-7984-41f6-b342-d3350322d89d)
